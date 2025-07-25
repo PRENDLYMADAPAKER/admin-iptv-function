@@ -59,3 +59,5 @@ exports.createUser = functions.https.onCall(async (data, context) => {
   const user = await admin.auth().createUser({ email, password });
   return { uid: user.uid };
 });
+
+// Trigger auto deploy
